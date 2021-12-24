@@ -1,0 +1,13 @@
+diff --git a/Instance/library.make b/Instance/library.make
+index 13106678..85cc2a99 100644
+--- a/Instance/library.make
++++ b/Instance/library.make
+@@ -298,7 +298,7 @@ $(GNUSTEP_OBJ_DIR)/$(VERSION_LIBRARY_FILE): $(OBJ_FILES_TO_LINK)
+ ifeq ($(OBJ_FILES_TO_LINK),)
+ 	$(WARNING_EMPTY_LINKING)
+ endif
+-	$(ECHO_LINKING)$(LIB_LINK_CMD)$(END_ECHO)
++	$(LIB_LINK_CMD)
+ 
+ #
+ # Install and uninstall targets
